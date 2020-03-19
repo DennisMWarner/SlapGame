@@ -15,11 +15,43 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="game.css" />
+    <title>SlapGame</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header class="container-fluid bg-dark text-white">
+      <div class="row">
+        <div class="col-12">
+          <h2>Health: <span id="health" >--</span></h2>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <img src="https://place-hold.it/200x200" alt="" />
+        </div>
+      </div>
+    </header>
+    <footer>
+      <div class="row justify-content-around">
+        <div class="col-2">
+          <button class="btn btn-success" onClick="slap()">Slap</button>
+        </div>
+        <div class="col-2">
+          <button class="btn btn-primary" onclick="giveWeapon('mittens')">Mittens</button>
+        </div>
+        <div class="col-2">
+          <button class="btn btn-success" onclick="punch()">Punch</button>
+        </div>
+        <div class="col-2">
+          <button class="btn btn-danger" onclick="giveWeapon('brassKnuckles')">Brass Knuckles</button>
+        </div>
+        <div class="col-2">
+          <button class="btn btn-success" onclick="kick()">Kick</button>
+        </div>
+        <div class="col-2">
+          <button class="btn btn-danger" onclick="giveWeapon('steelToedBoots')">Steel Toes</button>
+        </div>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
